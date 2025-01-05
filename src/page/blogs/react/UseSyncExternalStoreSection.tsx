@@ -1,10 +1,6 @@
 import CodeEditor from "@/components/shared/code-editor";
-import Code from "@/components/ui/code";
 import TypographyH2 from "@/components/ui/h2";
 import TypographyP from "@/components/ui/p";
-import SpanPurple from "@/components/ui/span-purple";
-import SpanYellow from "@/components/ui/span-yellow";
-import SpanBlue from "@/components/ui/span.blue";
 
 const contentSync = `
 let nextId = 0;
@@ -56,15 +52,15 @@ export default function TodosApp() {
 `;
 
 const UseSyncExternalStoreSection = () => {
-	return (
-		<div className="mt-6">
-			<TypographyH2 text="useSyncExternalStore" />
-			<TypographyP className="mt-4 dark:text-gray-400">
-				useSyncExternalStore es un Hook de React que te permite suscribirte a
-				una fuente de almacenamiento de datos (store) externa.
-			</TypographyP>
-			<CodeEditor language="javascript" content={contentSync} />
-		</div>
-	);
+  return (
+    <div className="mt-6">
+      <TypographyH2 text="useSyncExternalStore" />
+      <TypographyP className="mt-4 dark:text-gray-400">
+        useSyncExternalStore es un Hook de React que te permite suscribirte a
+        una fuente de almacenamiento de datos (store) externa.
+      </TypographyP>
+      <CodeEditor language="javascript" content={contentSync} />
+    </div>
+  );
 };
 export default UseSyncExternalStoreSection;
