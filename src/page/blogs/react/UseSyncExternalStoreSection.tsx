@@ -52,15 +52,15 @@ export default function TodosApp() {
 `;
 
 const UseSyncExternalStoreSection = () => {
-  return (
-    <div className="mt-6">
-      <TypographyH2 text="useSyncExternalStore" />
-      <TypographyP className="mt-4 dark:text-gray-400">
-        useSyncExternalStore es un Hook de React que te permite suscribirte a
-        una fuente de almacenamiento de datos (store) externa.
-      </TypographyP>
-      <CodeEditor language="javascript" content={contentSync} />
-    </div>
-  );
+	return (
+		<div className="mt-6">
+			<TypographyH2 text="useSyncExternalStore" />
+			<TypographyP className="mt-4 dark:text-gray-400">
+				useSyncExternalStore es un Hook de React que te permite suscribirte a
+				una fuente de almacenamiento de datos (store) externa.
+			</TypographyP>
+			<CodeEditor language="javascript" content={contentSync} />
+		</div>
+	);
 };
 export default UseSyncExternalStoreSection;
